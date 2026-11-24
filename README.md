@@ -38,9 +38,9 @@ For local viewing, open `docs/index.html` in a browser.
 
 ## 3. Available Materials
 
-- [`models/`](models/): model architecture code.
-- [`results/`](results/): fusion results organized by dataset.
-- [`docs/`](docs/): interactive demonstration and example images.
+- [Model architecture](./models/): model architecture code.
+- [Fusion results](./results/): fusion results organized by dataset.
+- [Demo source files](./docs/): interactive demonstration and example images.
 
 ---
 
