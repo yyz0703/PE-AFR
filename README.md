@@ -24,13 +24,13 @@
 
 ### [Open the Interactive Demo](https://yyz0703.github.io/PE-AFR/)
 
-The browser-based interface presents **three representative examples** with aligned all-in-focus references and four precomputed outputs: **Direct Regression, Flow Baseline, PE-AFR, and PE-AFR with mild smoothing**.
+The browser-based interface offers a **visual demonstration** of the evaluation workflow using three representative examples with aligned all-in-focus references and four precomputed outputs: **Direct Regression, Flow Baseline, PE-AFR, and PE-AFR with mild smoothing**.
 
 - **Inspect images:** switch between full images and enlarged regions to examine boundaries and fine details.
-- **Rank outputs:** assess boundary-transition fidelity, halo quality, and texture preservation separately, with configuration names hidden during ranking and ties permitted.
+- **Explore ranking:** assess boundary-transition fidelity, halo quality, and texture preservation, with configuration names hidden during ranking and ties permitted.
 - **Export judgments:** save rankings as CSV or JSON files locally.
 
-The demonstration uses precomputed images and does not run the model online. Judgments remain in the user's browser unless exported and are separate from the formal evaluation reported in the manuscript. Configuration identities are accessible in the public source files.
+This demonstration provides a convenient visual reference for the evaluation procedure. Demonstration judgments are separate from the formal study reported in the manuscript.
 
 For local viewing, open `docs/index.html` in a browser.
 
