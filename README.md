@@ -41,7 +41,8 @@ For local viewing, open `docs/index.html` in a browser.
 
 - [Model architecture](./models/): model architecture code.
 - [Fusion results](./results/): fusion results organized by dataset.
-- [Demo source files](./docs/): interactive demonstration and example images.
+- [Demo source files](./docs/): interface source code and example images.
+- [Interactive demo](https://yyz0703.github.io/PE-AFR/): open the visual evaluation interface.
 
 ---
 
