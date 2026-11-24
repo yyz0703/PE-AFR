@@ -22,7 +22,7 @@
 
 ## 2. Interactive Visual Demonstration
 
-### [Open the Interactive Demo](https://YOUR_USERNAME.github.io/PE-AFR/)
+### [Open the Interactive Demo]([https://YOUR_USERNAME.github.io/PE-AFR/](https://yyz0703.github.io/PE-AFR/))
 
 The browser-based interface presents **three representative examples** with aligned all-in-focus references and four precomputed outputs: **Direct Regression, Flow Baseline, PE-AFR, and PE-AFR with mild smoothing**.
 
