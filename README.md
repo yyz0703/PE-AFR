@@ -13,12 +13,8 @@
 
 **PE-AFR** is a multi-focus image fusion framework that combines a learned residual velocity with explicit Push and Pull guidance during flow evolution.
 
-- **Residual flow:** learns the evolution from an initial source-image average toward a fused image.
-- **Push and Pull guidance:** modulates the velocity field using source-derived information and a channel-space direction mapping.
-- **GuideNet:** estimates source-image focus preferences to guide fusion.
-
 <p align="center">
-  <img src="docs/assets/figure1.png" alt="Overview of the PE-AFR framework" width="960">
+  <img src="docs/assets/1.png" alt="Overview of the PE-AFR framework" width="960">
 </p>
 <p align="center"><b>Figure 1.</b> Overview of the PE-AFR framework.</p>
 
