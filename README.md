@@ -1,26 +1,86 @@
-# PE-AFR: Physics-guided Energy Adaptive Flow Regularization for Multi-focus Image Fusion
+<h1 align="center">PE-AFR</h1>
 
-![Code Status](https://img.shields.io/badge/Code-Partial_Release-blue)
-![Paper Status](https://img.shields.io/badge/Paper-Under_Review-lightgrey)
-![Interactive Demo](https://img.shields.io/badge/Interactive_Demo-GitHub_Pages-green)
+<p align="center">
+  <b>Physics-guided Energy Adaptive Flow Regularization for Multi-focus Image Fusion</b>
+</p>
 
-> **Repository for PE-AFR.**
-> The manuscript is currently **under review**. This repository provides the model architecture, fusion results, and an interactive visual demonstration. The complete training and testing code, together with pretrained weights, will be released upon acceptance.
+<p align="center">
+  <a href="https://yyz0703.github.io/PE-AFR/">Interactive Demo</a> |
+  <a href="#network-architecture">Network Architecture</a> |
+  <a href="#fusion-results">Fusion Results</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9-3776AB?logo=python&logoColor=white" alt="Python 3.9">
+  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Paper-Under_Review-lightgrey" alt="Paper under review">
+</p>
 
 ---
 
-## 1. Introduction
+## Introduction
 
 **PE-AFR** is a multi-focus image fusion framework that combines a learned residual velocity with explicit Push and Pull guidance during flow evolution.
 
+- **Residual flow:** learns the evolution from an initial source-image average toward a fused image.
+- **Push and Pull guidance:** modulates the velocity field using source-derived information and a channel-space direction mapping.
+- **GuideNet:** estimates source-image focus preferences to guide fusion.
+
+The manuscript is currently under review. This repository provides the model architecture code, fusion results, and an interactive visual demonstration.
+
+## Network Architecture
+
 <p align="center">
-  <img src="docs/assets/1.png" alt="Overview of the PE-AFR framework" width="960">
+  <img src="docs/assets/figure1.png" alt="Overview of the PE-AFR framework" width="960">
 </p>
 <p align="center"><b>Figure 1.</b> Overview of the PE-AFR framework.</p>
 
----
+## Repository Structure
 
-## 2. Interactive Visual Demonstration
+```text
+PE-AFR/
+├── README.md
+├── models/
+│   └── models.py
+├── results/
+│   ├── Lytro/
+│   ├── MFFW/
+│   ├── MFI-WHU/
+│   └── Grayscale/
+└── docs/
+    ├── index.html
+    ├── app.js
+    ├── style.css
+    ├── data.js
+    └── assets/
+        ├── figure1.png
+        └── ...
+```
+
+- [Model architecture](./models/): network implementation.
+- [Fusion results](./results/): outputs organized by dataset.
+- [Demo source files](./docs/): HTML interface, scripts, and example images.
+
+## Environment
+
+- **Python:** 3.9.
+- **Framework:** PyTorch.
+- **Image operations:** torchvision.
+
+## Fusion Results
+
+The `results/` directory stores PE-AFR fusion outputs in separate dataset folders:
+
+| Folder | Contents |
+| --- | --- |
+| `results/Lytro/` | Fusion outputs for the Lytro dataset. |
+| `results/MFFW/` | Fusion outputs for the MFFW dataset. |
+| `results/MFI-WHU/` | Fusion outputs for the MFI-WHU dataset. |
+| `results/Grayscale/` | Fusion outputs for the grayscale dataset. |
+
+Each image represents the fused output of one source-image pair. Match outputs to their source pairs by sample identifier rather than file order. The images under `docs/assets/` are used by the interactive demonstration; the dataset results are stored under `results/`.
+
+## Interactive Visual Demonstration
 
 ### [Open the Interactive Demo](https://yyz0703.github.io/PE-AFR/)
 
@@ -32,26 +92,14 @@ The browser-based interface offers a **visual demonstration** of the evaluation 
 
 This demonstration provides a convenient visual reference for the evaluation procedure. Demonstration judgments are separate from the formal study reported in the manuscript.
 
-For local viewing, open `docs/index.html` in a browser.
+For local viewing, open `docs/index.html` in a browser. The demonstration runs without Python.
 
-
----
-
-## 3. Available Materials
-
-- [Model architecture](./models/): model architecture code.
-- [Fusion results](./results/): fusion results organized by dataset.
-- [Demo source files](./docs/): interface source code and example images.
-- [Interactive demo](https://yyz0703.github.io/PE-AFR/): open the visual evaluation interface.
-
----
-
-## 4. Release Plan
+## Release Plan
 
 - [x] Release the model architecture code.
 - [x] Provide fusion results.
 - [x] Provide the interactive visual demonstration interface.
-- [ ] Release pretrained weights and inference code **[Upon Acceptance]**.
-- [ ] Release the complete training code, preprocessing scripts, and experimental evaluation code **[Upon Acceptance]**.
+- [ ] Release pretrained weights and inference code upon acceptance.
+- [ ] Release the complete training code, preprocessing scripts, and experimental evaluation code upon acceptance.
 
 The complete code and pretrained weights will be made publicly available upon acceptance.
