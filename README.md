@@ -75,11 +75,7 @@ PE-AFR/
 - [Fusion results](./results/): outputs organized by dataset.
 - [Demo source files](./docs/): HTML interface, scripts, and example images.
 
-## Environment
 
-- **Python:** 3.9.
-- **Framework:** PyTorch.
-- **Image operations:** torchvision.
 
 ## Fusion Results
 
